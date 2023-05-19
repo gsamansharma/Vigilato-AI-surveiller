@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>
+        Welcome to Vigilato
+    </title>
+    <style>
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            padding: 20px;
+        }
+        body {
+            background-color: powder-blue;
+        }
+        h1 {
+            color: black;
+            text-align:center;
+        }
+        input {
+            color: red;
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<img src="https://images2.imgbox.com/0c/d3/e8Nxi0CM_o.png" alt="Vigilato" class="logo">
+<h1>Vigilato-login</h1>
+<form action = "/surveil" method="POST" enctype="multipart/form-data">
+        Enter your phone number
+        <input type="number" name="phone_number" id="phone-input" placeholder="98x324x9x">
+        Enter Camera's IPv4 address
+        <input type="text" name="camera_address" id="address-input" placeholder="192.1x8.12.32:8x8x">
+        <input type = "submit" id ="submit-btn" value="Start surveillance">
+    <a href="/signup"><input type = "button" value="New User? Signup"></a>
+    </form>
+<script>
+const phoneInput = document.getElementById("phone-input");
+const submitBtn = document.getElementById("submit-btn");
+
+// Add an event listener to the input that will check its value
+<!--submitBtn.addEventListener("click", () => {-->
+<!--  const phoneRegex = /^\d{10}$/; // This regex matches a 10-digit number-->
+<!--  if (phoneRegex.test(phoneInput.value)) {-->
+<!--    submitBtn.setAttribute("disabled", false);-->
+<!--  } else {-->
+<!--    alert("asdf");-->
+<!--    submitBtn.setAttribute("disabled", true);  }-->
+<!--});-->
+
+</script>
+</body>
+</html>
